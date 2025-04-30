@@ -92,11 +92,12 @@ body {
 .header__content {
   display: flex;
   justify-content: space-between;
+  height: 100%;
 }
 .header__info {
   display: flex;
   flex-direction: column;
-  gap: 118px;
+  gap: 80px;
   margin-top: auto;
 }
 .header__info-list {
@@ -124,7 +125,7 @@ body {
 .header__social {
   margin-top: auto;
 }
-.header__social-list {
+.social-list {
   display: flex;
   gap: 20px;
 }
@@ -300,4 +301,115 @@ body {
   font-weight: 700;
   max-width: 115px;
   text-align: center;
+}
+.site-images {
+  margin-bottom: 150px;
+  width: 100%; /* Занимает всю ширину родителя */
+  height: auto; /* Автоподбор высоты для сохранения пропорций */
+}
+
+.reviews {
+  margin-bottom: 150px;
+}
+
+.reviews__top {
+  margin-bottom: 100px;
+  margin-left: calc(50% + 10px);
+}
+.reviews__suptitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.reviews__title {
+  font-size: 64px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.reviews__items {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+.reviews__item:nth-child(even) {
+  padding-top: 100px;
+}
+.reviews__img {
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+.blockquote {
+  margin: 0%;
+}
+.blockquote__text {
+  margin-bottom: 15px;
+}
+.blockquote__cite {
+  display: block;
+  margin-bottom: 5px;
+  text-align: right;
+}
+.blockquote__cite::before {
+  content: "/";
+}
+.blockquote__time {
+  display: block;
+  text-align: right;
+}
+.footer {
+  background-color: #2b2a29;
+  color: #fff;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.footer__inner {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0auto;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.footer__title {
+  font-size: 64px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footer__info-list {
+  display: flex;
+  gap: 68px;
+  margin-bottom: 60px;
+}
+.footer__info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__info-item dt {
+  font-size: 20;
+  font-weight: 700;
+}
+.footer__info-item dd {
+  margin-left: 0%;
+}
+.footer__info-item span {
+  display: block;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: end;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 40px;
+}
+@media (max-width: 992px) {
 }
