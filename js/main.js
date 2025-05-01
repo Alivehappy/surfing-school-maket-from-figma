@@ -1,14 +1,5 @@
-function sum(num) {
-  let result = num;
-  function add(operand) {
-    if (operand !== undefined) {
-      result += operand;
-      return add;
-    }
-    return result;
-  }
-
-  return add;
-}
-let a = sum(1)(3)(5)(8);
-a();
+const menuBtn = document.querySelector(".menu__btn");
+const menu = document.querySelector(".menu");
+menuBtn.addEventListener("click", () => {
+  menu.classList.toggle("menu--open");
+});
